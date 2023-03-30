@@ -1,0 +1,77 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "B1913242",
+    "password": "B1913242"
+}
+
+###
+
+DELETE  http://localhost:5000/student/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTk2MDI5YmE1ODI4OGU0OTMzMDM4NWIiLCJpYXQiOjE2MzcyMjEyMjV9.vPQmErPabfA9qdYfJKk_h2CpHMutgcv8vZGh_qB5V_8
+Content-Type: application/json
+
+{
+   "msv": "B1912345"
+}
+
+###
+POST http://localhost:5000/create-student-account
+Content-Type: application/json
+
+{
+    "username": "covan1",
+    "password": "cv",
+    "role": "manager",
+    "lop": "DI20Z6A2, DI21T9A1"
+}
+
+###
+
+POST http://localhost:5000/student/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTk2MDI5YmE1ODI4OGU0OTMzMDM4NWIiLCJpYXQiOjE2MzcyMjEyMjV9.vPQmErPabfA9qdYfJKk_h2CpHMutgcv8vZGh_qB5V_8
+Content-Type: application/json
+
+{
+    "msv": "B1912345",
+    "name": "Nguyễn Văn A",
+    "birthday": "2001-01-01",
+    "gender": "Nam",
+    "phone": "8979465465",
+    "address": "Cần Thơ",
+    "sum_of_credits": 80,
+    "drl": 80,
+    "tbhk": 3.5,
+    "gpa": 3.5,
+    "status": "Không",
+    "lop": "DI19Z6A1"
+}
+###
+GET http://localhost:5000/student/all/DI19Z6A1
+
+###
+PATCH    http://localhost:5000/post/update/1050
+Content-Type: application/json
+
+{
+    "content": "Upofdffdfstfdf"
+    
+}
+
+###
+GET htt://localhost:5000/student/allscore/2021HK1
+
+###
+GET htt://localhost:5000/studentscore/B2017026
+
+###
+GET http://localhost:5000/student/619f544fe5e3738cca25cf86
+
+###
+
+PATCH http://localhost:5000/post/comment/1050
+Content-Type: application/json
+{
+    "cmt": "ahdflkjáhlkfdj"
+}
